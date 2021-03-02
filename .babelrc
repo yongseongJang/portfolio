@@ -1,0 +1,7 @@
+{
+    "preset": [
+        "@babel/preset-env",
+        "@babel/prest-typescript",
+        "@babel/preset-react"
+    ]
+}
