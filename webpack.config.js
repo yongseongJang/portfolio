@@ -1,12 +1,14 @@
 const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: './src/public/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build/public'),
     filename: '[name].js',
     publicPath: '/',
   },
@@ -49,5 +51,10 @@ module.exports = {
       filename: '[name].css',
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './views/index.html',
+      filename: './index.html',
+    }),
   ],
 };

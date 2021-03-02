@@ -8,7 +8,8 @@
       "noImplicitAny": true,
       "strictNullChecks": true,
       "removeComments": true,
-      "jsx": "react"
+      "jsx": "react",
+      "skipLibCheck": true,
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules"]
