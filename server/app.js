@@ -10,12 +10,12 @@ const port = process.env.PORT;
 const fork = () => {
     try {
         const app = express();
-        app.use(express_1.static(path_1.join(__dirname, '../public')));
+        app.use(express_1.static(path_1.join(__dirname, '../')));
         app.use(body_parser_1.json());
         app.use(body_parser_1.urlencoded({ extended: true }));
         app.get('*', (req, res) => {
             res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.send(express_1.static(path_1.join(__dirname, '../public/index.html')));
+            res.send(express_1.static(path_1.join(__dirname, '../index.html')));
         });
         app.use((err, req, res, next) => {
             console.log(err);
