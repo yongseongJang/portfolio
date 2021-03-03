@@ -1,0 +1,75 @@
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: #111;
+  transition: 0.5s;
+
+  .close {
+    color: #818181;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: #fff;
+  }
+
+  .nav {
+    padding-top: 80px;
+    .list {
+      position: relative;
+      list-style: none;
+
+      li a {
+        color: #818181;
+        text-decoration: none;
+        padding: 8px 8px 8px 32px;
+        font-size: 25px;
+        display: block;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 60px;
+
+    a {
+      color: #818181;
+      text-decoration: none;
+      padding: 8px 8px 8px 32px;
+      font-size: 18px;
+      display: block;
+      transition: 0.5s;
+    }
+
+    .github:hover {
+      color: #fff;
+      background-color: transparent;
+    }
+
+    a:visited {
+      color: #818181;
+      text-decoration: none;
+    }
+
+    p {
+      color: #818181;
+      padding: 8px 8px 8px 34px;
+      font-size: 14px;
+    }
+  }
+}

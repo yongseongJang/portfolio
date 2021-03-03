@@ -1,0 +1,31 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 40px 80px;
+  background: transparent;
+
+  .logo {
+    position: relative;
+    color: #333;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+  }
+
+  .menu {
+    position: relative;
+    cursor: pointer;
+
+    .line {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+    }
+  }
+}

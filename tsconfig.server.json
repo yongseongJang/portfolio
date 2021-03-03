@@ -1,8 +1,9 @@
 {
     "extends": "./tsconfig.json",
     "compilerOptions": {
-      "outDir": "build"
+      "outDir": "./build/server",
+      "moduleResolution": "node",
     },
-    "exclude": ["./node_modules", "./build"],
-    "include": ["./src/server/**/*"]
+    "include": ["src/server/**/*"],
+    "exclude": ["node_modules", "build"],
   }
