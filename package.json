@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/yongseongJang/portfolio/issues"
   },
-  "homepage": "https://yongseongJang.github.io/portfolio/",
+  "homepage": "https://yongseongJang.github.io/portfolio",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",

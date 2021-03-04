@@ -10,6 +10,7 @@ section {
 
 .home {
   background: #fff;
+  animation: fadein 3s;
 
   div {
     position: absolute;
@@ -40,11 +41,13 @@ section {
     h4 {
       padding-bottom: 70px;
       font-size: 2em;
+      animation: fadein 2s;
     }
 
     .content {
       display: flex;
       flex-wrap: wrap;
+      animation: fadein 3s;
 
       .detail {
         padding-right: 180px;
@@ -88,6 +91,7 @@ section {
     top: 40%;
     left: 35%;
     transform: translate(-35%, -40%);
+    animation: fadein 3s;
 
     img {
       width: 250px;
@@ -217,14 +221,35 @@ section {
 
     ul {
       list-style: none;
+      animation: fadein 3s;
       li {
         border: 1px solid rgb(219, 219, 219);
-        border-top-left-radius: 8px;
+        border-radius: 8px;
         margin-bottom: 20px;
         padding: 5px 5px;
 
         h1 {
           margin-bottom: 15px;
+
+          a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 3px;
+
+            img {
+              width: 25px;
+              height: 25px;
+              margin-top: 2px;
+              opacity: 0.5;
+              position: absolute;
+              top: 8px;
+              right: 12px;
+            }
+
+            img:hover {
+              opacity: 1;
+            }
+          }
         }
 
         p {
@@ -236,23 +261,6 @@ section {
         .term {
           margin-bottom: 5px;
           color: rgb(116, 116, 116);
-        }
-
-        a {
-          color: #333;
-          text-decoration: none;
-          margin-left: 3px;
-
-          img {
-            width: 25px;
-            height: 25px;
-            margin-top: 2px;
-            opacity: 0.5;
-          }
-
-          img:hover {
-            opacity: 1;
-          }
         }
 
         .skill {
@@ -302,6 +310,7 @@ section {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
+    transition: 0.5s;
     cursor: pointer;
   }
 
@@ -313,11 +322,21 @@ section {
 
 .count:hover {
   .indication {
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-left: 1px solid rgb(133, 133, 133);
+    border-bottom: 1px solid rgb(133, 133, 133);
   }
 
   p {
-    color: #000;
+    color: rgb(133, 133, 133);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

@@ -59,7 +59,7 @@ const Section: React.FC = () => {
 
                                 <div className='detail'>
                                     <h5 className='eng_h5'> Goorm </h5>
-                                    <p> 4학년 1학기 현장실습 </p>
+                                    <p> 4학년 2학기 현장실습 </p>
                                     <p className='term'> 2019.08.05 ~ 2019.12.20 </p>
                                     <p className='work'> Admin - Express, React, Mongoose </p>
                                     <p> Goorm IDE - Node.js, JQuery </p>
@@ -141,7 +141,7 @@ const Section: React.FC = () => {
                         <div className='content'>
                             <ul>
                                 <li>
-                                    <h1>웹 기능 개발</h1>
+                                    <h1>웹 기능 개발 <a href='https://github.com/yongseongJang/node-react'><img src='https://img.pngio.com/github-logo-icon-of-glyph-style-available-in-svg-png-eps-ai-github-icon-png-256_256.png' alt='github'></img></a></h1>
                                     <p className='term'>2020.01~</p>
                                     <ul className='skill'>
                                         <li>TypeScript</li>
@@ -153,10 +153,9 @@ const Section: React.FC = () => {
                                         <li>Jest</li>
                                     </ul>
                                     <p>웹 개발 공부로 회원 관련 기능, 인증, 게시판 기능을 구현했습니다.</p>
-                                    <a href='https://github.com/yongseongJang/node-react'><img src='https://img.pngio.com/github-logo-icon-of-glyph-style-available-in-svg-png-eps-ai-github-icon-png-256_256.png' alt='github'></img></a>
                                 </li>
                                 <li>
-                                    <h1>대학교 현장실습</h1>
+                                    <h1>현장실습</h1>
                                     <p className='term'>2019.08 ~ 2019.12</p>
                                     <ul className='skill'>
                                         <li>JavaScript</li>
@@ -167,7 +166,6 @@ const Section: React.FC = () => {
                                         <li>Redux</li>
                                         <li>Redux-saga</li>
                                         <li>Jest</li>
-                                        <li>Express</li>
                                         <li>JQuery</li>
                                     </ul>
                                     <p>admin 사이트 대시보드 유지보수와 웹 서비스 유지보수를 했습니다.</p>

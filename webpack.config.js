@@ -8,9 +8,9 @@ module.exports = {
   mode: 'development',
   entry: './src/public/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'build/public'),
+    path: path.resolve(__dirname, 'build/'),
     filename: '[name].js',
-    publicPath: '/',
+    publicPath: './',
   },
   devtool: 'inline-source-map',
   resolve: {

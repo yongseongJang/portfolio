@@ -12,13 +12,13 @@ const fork = () => {
     try {
         const app: Application = express();
 
-        app.use(expressStatic(join(__dirname, '../public')));
+        app.use(expressStatic(join(__dirname, '../')));
         app.use(json());
         app.use(urlencoded({ extended: true }));
 
         app.get('*', (req: Request, res: Response) => {
             res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.send(expressStatic(join(__dirname, '../public/index.html')))
+            res.send(expressStatic(join(__dirname, '../index.html')))
         })
 
         app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
