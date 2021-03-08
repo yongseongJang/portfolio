@@ -17,7 +17,7 @@ const Head: React.FC = () => {
 
     return (
         <header>
-            <a href="/" className='logo' onClick={()=>dispatch({type:'CHANGE_SECTION', sectionNum:0})}>YS</a>
+            <a href="/portfolio" className='logo' onClick={()=>dispatch({type:'CHANGE_SECTION', sectionNum:0})}>YS</a>
                 
             <div id='menu' className="menu" onClick={handleClick} >
                 <div className='line'/>

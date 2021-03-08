@@ -215,13 +215,13 @@ section {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 30%;
-    left: 15%;
-    transform: translate(-15%, -30%);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
 
     ul {
       list-style: none;
-      animation: fadein 3s;
+      animation: fadein 2s;
       li {
         border: 1px solid rgb(219, 219, 219);
         border-radius: 8px;

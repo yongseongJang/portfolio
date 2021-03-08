@@ -54,7 +54,7 @@ const Section: React.FC = () => {
                                     <p> 2013.03 ~ 2020.02 </p>
                                     <p> 컴퓨터과학전공 </p>
                                     <p> 전체 학점 3.66/4.5 </p>
-                                    <p> 전공 학점 3.98/4.5 </p>
+                                    <p> 전공 학점 3.92/4.5 </p>
                                 </div>
 
                                 <div className='detail'>
