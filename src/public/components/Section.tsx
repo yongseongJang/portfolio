@@ -7,11 +7,12 @@ const Section: React.FC = () => {
     const {state, dispatch} = React.useContext(Context);
 
     React.useEffect(()=>{
-
-        window.addEventListener('wheel', handleWheel);
+        const timeout = setTimeout(()=>window.addEventListener('wheel', handleWheel),1000);
 
         return function cleanup() {
             window.removeEventListener('wheel', handleWheel);
+
+            clearTimeout(timeout);
         }
     })
 
